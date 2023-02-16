@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Kino</title>
+    <script src="Oblig1.js"></script>
+</head>
+<body>
+
+<h1>Bestilling av kinobilletter</h1>
+
+<label>Velg film:</label>
+<select id="film" style="margin-left: 10px">
+    <option value ="" disabled selected>Velg film her</option>
+    <option>Titanic</option>
+    <option>Babylon</option>
+    <option>Avatar</option>
+</select>
+
+<span id="fil" style="color:red"></span>
+<br>
+<br>
+
+<label>Antall:</label>
+<input type="text" size="2" id="antall" style="margin-left:1px"/>
+<span id="ant" style="color:red"> </span>
+<br>
+
+<br>
+<label>Fornavn:</label>
+<input type="text" id="fornavn" style="margin-left: 17px; margin-bottom:5px"/>
+<span id="for" style="color:red"> </span>
+<br>
+
+<label>Etternavn:</label>
+<input type="text" id="etternavn" style="margin-left: 9px; margin-bottom: 5px"/>
+<span id="ette" style="color:red"> </span>
+<br>
+
+<label>Telefonnr:</label>
+<input type="text" id="telefonnr" style="margin-left: 9px; margin-bottom: 5px"/>
+<span id="tlf" style="color:red"> </span>
+<br>
+
+<label>Epost:</label>
+<input type="text" id="epost" style="margin-left: 34px; margin-bottom: 5px"/>
+<span id="epo" style="color:red"> </span>
+<br>
+
+<button id="kjøp" style= "margin-top: 15px" onclick="kjop()">Kjøp billett</button>
+
+
+<h2>Alle billetter </h2>
+<div id="registerListet"></div>
+<br>
+
+<button id="slett" onclick="slett()">Slett alle billettene</button>
+
+</body>
+</html>
